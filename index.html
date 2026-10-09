@@ -6,7 +6,7 @@
 <style>
 :root{--bg:#0b0d18;--panel:#14182a;--panel2:#1c2138;--text:#f4f5ff;--muted:#aab0ca;--accent:#9b7bff;--accent2:#ff6eaf;--line:#ffffff14;--shadow:#0006}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,color-mix(in srgb,var(--accent) 24%,transparent),transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;transition:background .25s,color .25s}
-a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1180px,92%);margin:auto}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1500px,96%);margin:auto}
 header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:23px;font-weight:900;letter-spacing:-1px;white-space:nowrap}.brand span{color:var(--accent)}.brand small{display:block;font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:500;margin-top:3px}
 .navlinks{display:flex;gap:24px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--text)}.navright{display:flex;gap:10px;align-items:center}
@@ -20,7 +20,7 @@ h1{font-size:clamp(32px,5vw,57px);line-height:1.35;margin:20px 0 12px;letter-spa
 .section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:34px 0 18px}.section-head h2{margin:0;font-size:24px}.section-head p{margin:7px 0 0;color:var(--muted);font-size:12px}.view-all{color:var(--accent);font-size:13px}
 .filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}.chip{border:1px solid var(--line);color:var(--muted);background:var(--panel);border-radius:999px;padding:9px 15px;cursor:pointer;font-size:12px}.chip.active,.chip:hover{background:var(--accent);color:#11101b;border-color:transparent}
 .searchbar{display:flex;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:0 14px;border-radius:13px;min-width:245px}.searchbar input{width:100%;background:transparent;border:0;outline:0;color:var(--text);padding:12px 0;font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s;min-width:0}.card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 65%,transparent)}.poster{height:245px;position:relative;overflow:hidden;background:#25213d}.poster img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.card:hover .poster img{transform:scale(1.05)}.poster-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(circle at 50% 25%,color-mix(in srgb,var(--accent) 30%,#25213d),#171426 72%);color:#ddd6ff}.poster-placeholder .mask{font-size:42px}.poster-upload{position:absolute;bottom:10px;right:10px;left:10px;width:calc(100% - 20px);border:1px solid #ffffff45;background:#080912d9;color:white;border-radius:10px;padding:9px 8px;font-size:11px;cursor:pointer;backdrop-filter:blur(8px)}.poster-upload:hover{background:var(--accent);color:#111}.poster-file{display:none}.poster.has-image .poster-upload{opacity:0;transition:opacity .2s}.poster.has-image:hover .poster-upload,.poster.has-image:focus-within .poster-upload{opacity:1}.rank{position:absolute;top:12px;right:12px;background:#080912c9;border:1px solid #ffffff2b;padding:6px 9px;border-radius:8px;font-size:10px;backdrop-filter:blur(6px)}.fav{position:absolute;top:10px;left:10px;width:34px;height:34px;border:1px solid #ffffff3b;background:#090a15b8;color:white;border-radius:50%;font-size:17px;cursor:pointer}.fav.on{color:#ff6eaf;background:#fff}.card-body{padding:15px}.card-title{font-weight:bold;margin:0 0 8px;font-size:15px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;gap:8px}.rating{color:#ffd77c}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}.tag{font-size:10px;background:var(--panel2);color:var(--muted);padding:5px 8px;border-radius:7px}.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:15px;padding-top:12px;border-top:1px solid var(--line)}.watch{font-size:11px;color:var(--accent);font-weight:bold}.episodes{font-size:10px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s;min-width:0}.card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 65%,transparent)}.poster{height:245px;position:relative;overflow:hidden;background:#25213d}.poster img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.card:hover .poster img{transform:scale(1.05)}.poster-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(circle at 50% 25%,color-mix(in srgb,var(--accent) 30%,#25213d),#171426 72%);color:#ddd6ff}.poster-placeholder .mask{font-size:42px}.poster-upload{position:absolute;bottom:10px;right:10px;left:10px;width:calc(100% - 20px);border:1px solid #ffffff45;background:#080912d9;color:white;border-radius:10px;padding:9px 8px;font-size:11px;cursor:pointer;backdrop-filter:blur(8px)}.poster-upload:hover{background:var(--accent);color:#111}.poster-file{display:none}.poster.has-image .poster-upload{opacity:0;transition:opacity .2s}.poster.has-image:hover .poster-upload,.poster.has-image:focus-within .poster-upload{opacity:1}.rank{position:absolute;top:12px;right:12px;background:#080912c9;border:1px solid #ffffff2b;padding:6px 9px;border-radius:8px;font-size:10px;backdrop-filter:blur(6px)}.fav{position:absolute;top:10px;left:10px;width:34px;height:34px;border:1px solid #ffffff3b;background:#090a15b8;color:white;border-radius:50%;font-size:17px;cursor:pointer}.fav.on{color:#ff6eaf;background:#fff}.card-body{padding:15px}.card-title{font-weight:bold;margin:0 0 8px;font-size:15px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;gap:8px}.rating{color:#ffd77c}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}.tag{font-size:10px;background:var(--panel2);color:var(--muted);padding:5px 8px;border-radius:7px}.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:15px;padding-top:12px;border-top:1px solid var(--line)}.watch{font-size:11px;color:var(--accent);font-weight:bold}.episodes{font-size:10px;color:var(--muted)}
 .banner{margin:55px 0 35px;padding:28px 32px;border-radius:22px;background:linear-gradient(115deg,color-mix(in srgb,var(--accent) 30%,var(--panel)),var(--panel));border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h3{margin:0 0 8px;font-size:21px}.banner p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}.banner .primary{white-space:nowrap}
 footer{border-top:1px solid var(--line);padding:27px 0 35px;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.empty{display:none;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
 .detail-overlay{position:fixed;inset:0;z-index:1000;background:#050610d9;backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:18px;overflow-y:auto}.detail-overlay.open{display:flex}.detail-panel{position:relative;width:min(760px,100%);max-height:min(90vh,900px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:0 25px 90px #0009;padding:24px}.detail-close{position:absolute;top:14px;left:14px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;width:38px;height:38px;cursor:pointer;font-size:22px;z-index:2}.detail-top{display:grid;grid-template-columns:190px 1fr;gap:22px;align-items:start;padding-top:12px}.detail-poster{width:100%;height:265px;object-fit:cover;border-radius:14px;background:var(--panel2)}.detail-title{margin:8px 45px 10px 0;font-size:24px;line-height:1.5}.detail-score{display:inline-flex;align-items:center;gap:7px;color:#ffd77c;background:#ffd77c15;padding:8px 11px;border-radius:10px;font-weight:bold}.detail-section{margin-top:22px;padding-top:17px;border-top:1px solid var(--line)}.detail-section h3{margin:0 0 10px;font-size:15px}.detail-summary{color:var(--muted);font-size:13px;line-height:2;white-space:pre-line}.detail-genres{display:flex;flex-wrap:wrap;gap:8px}.detail-genre{background:var(--panel2);padding:7px 10px;border-radius:8px;font-size:12px}.download-row{display:flex;gap:9px;flex-wrap:wrap}.download-input,.chat-input{min-width:0;flex:1;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px;outline:none}.detail-btn{border:0;border-radius:10px;padding:11px 14px;background:var(--accent);color:#11101b;font-weight:bold;cursor:pointer}.download-link{display:inline-flex;background:#50d6ad;color:#071711;padding:11px 15px;border-radius:10px;font-weight:bold;margin-top:8px}.chat-note{color:var(--muted);font-size:11px;line-height:1.8;margin:0 0 10px}.chat-messages{display:flex;flex-direction:column;gap:8px;max-height:190px;overflow:auto;margin-bottom:12px}.chat-message{background:var(--panel2);padding:9px 11px;border-radius:10px;font-size:12px;line-height:1.8;overflow-wrap:anywhere}.chat-message b{color:var(--accent);margin-left:7px}.comment-actions{float:left;display:flex;gap:5px;flex-wrap:wrap}.comment-edit,.comment-delete,.spoiler-toggle{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:7px;padding:3px 8px;font:inherit;font-size:10px;cursor:pointer}.comment-delete{float:left;border:1px solid #ff8c9b55;background:#ff8c9b12;color:#ff8c9b;border-radius:7px;padding:3px 8px;font:inherit;font-size:10px;cursor:pointer;margin-right:8px}.comment-delete:hover{background:#ff8c9b25}.comment-edit:hover,.spoiler-toggle:hover{background:var(--panel2)}.comment-body.spoiler-hidden{filter:blur(6px);user-select:none}.spoiler-tools{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}.spoiler-tools input{accent-color:var(--accent)}.chat-form{display:flex;gap:8px}.chat-name{width:120px;min-width:80px;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px;outline:none}
@@ -33,7 +33,7 @@ footer{border-top:1px solid var(--line);padding:27px 0 35px;color:var(--muted);f
 .auth-panel h2{margin:0 0 8px}.auth-muted{color:var(--muted);font-size:12px;line-height:1.8}.auth-field{display:block;width:100%;margin:10px 0;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:11px;padding:12px;outline:none}.auth-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.auth-actions button{flex:1}.auth-status{font-size:12px;line-height:1.8;margin-top:12px;color:var(--muted);overflow-wrap:anywhere}.auth-status.error{color:#ff8c9b}.auth-status.ok{color:#50d6ad}
 @media(max-width:650px){.navright{gap:6px}.auth-btn,.theme-btn{padding:9px 10px;font-size:11px}}
 @media(max-width:560px){.detail-panel{padding:18px}.detail-top{grid-template-columns:105px 1fr;gap:13px}.detail-poster{height:155px}.detail-title{font-size:18px;margin-right:0}.detail-top-copy{padding-left:30px}.chat-form{flex-wrap:wrap}.chat-name{flex:1}.detail-overlay{padding:8px}}
-@media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-box{grid-template-columns:1fr .7fr}.hero-art{transform:scale(.85)}.navlinks{gap:12px}}
+@media(max-width:1150px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-box{grid-template-columns:1fr .7fr}.hero-art{transform:scale(.85)}.navlinks{gap:12px}}
 @media(max-width:650px){.nav{height:66px}.navlinks{display:none}.brand{font-size:20px}.hero{padding-top:22px}.hero-box{grid-template-columns:1fr;padding:25px;min-height:auto}.hero-art{height:180px;grid-row:1;transform:scale(.65);margin:-18px 0 -25px}.hero-copy{grid-row:2}.hero-copy p{font-size:13px}.stats{gap:18px}.section-head{align-items:start;flex-direction:column}.searchbar{width:100%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.poster{height:205px}.card-body{padding:12px}.card-title{font-size:13px}.banner{padding:23px;align-items:start;flex-direction:column}.banner .primary{width:100%}}
 @media(max-width:370px){.grid{grid-template-columns:1fr 1fr}.poster{height:175px}.meta{font-size:10px}}
 </style>
@@ -48,12 +48,12 @@ footer{border-top:1px solid var(--line);padding:27px 0 35px;color:var(--muted);f
 </div></header>
 <main class="wrap">
 <section class="hero" id="home"><div class="hero-box">
-<div class="hero-copy"><span class="eyebrow"><i class="dot"></i> به دنیای انیمه خوش اومدی</span><h1>داستان بعدی تو<br>از اینجا شروع می‌شه.</h1><p>از ماجراجویی‌های نفس‌گیر تا داستان‌های احساسی؛ دنیای انیمه‌ات رو کشف کن و عنوان بعدی برای تماشا رو پیدا کن.</p><div class="actions"><a class="primary" href="#anime">کشف انیمه‌ها ←</a><a class="secondary" href="#popular">محبوب‌ترین‌ها</a></div><div class="stats"><div><b>۱۲۰+</b>عنوان منتخب</div><div><b>۲۴/۷</b>دنیای انیمه</div><div><b>∞</b>ماجراجویی</div></div></div>
+<div class="hero-copy"><span class="eyebrow"><i class="dot"></i> به دنیای انیمه خوش اومدی</span><h1>داستان بعدی تو<br>از اینجا شروع می‌شه.</h1><p>از ماجراجویی‌های نفس‌گیر تا داستان‌های احساسی؛ دنیای انیمه‌ات رو کشف کن و عنوان بعدی برای تماشا رو پیدا کن.</p><div class="actions"><a class="primary" href="#anime">کشف انیمه‌ها ←</a><a class="secondary" href="#popular">محبوب‌ترین‌ها</a></div><div class="stats"><div><b>۰</b>انیمه اضافه‌شده</div><div><b>۲۴/۷</b>دنیای انیمه</div><div><b>∞</b>ماجراجویی</div></div></div>
 <div class="hero-art" aria-label="تصویر هنری انیمه"><div class="moon"></div><div class="silhouette"></div><div class="sword"></div><span class="spark one">✦</span><span class="spark two">✧</span><span class="spark three">✦</span></div>
 </div></section>
 <section id="anime"><div class="section-head"><div><h2>دنیای انیمه‌ها</h2><p>عنوان مورد علاقه‌ات رو پیدا کن</p></div><label class="searchbar">⌕ <input id="search" placeholder="اسم انیمه رو فارسی یا انگلیسی بنویس..." aria-label="جست‌وجوی انیمه به فارسی یا انگلیسی"></label></div>
 <div class="filters" id="filters"><button class="chip active" data-filter="همه">همه</button><button class="chip" data-filter="اکشن">اکشن</button><button class="chip" data-filter="فانتزی">فانتزی</button><button class="chip" data-filter="ماجراجویی">ماجراجویی</button><button class="chip" data-filter="درام">درام</button><button class="chip" data-filter="علمی‌تخیلی">علمی‌تخیلی</button><button class="chip" data-filter="عاشقانه">عاشقانه</button></div>
-<div class="grid" id="animeGrid"><div class="empty" style="display:block">در حال دریافت انیمه‌ها از آرشیو...</div></div><div style="display:flex;justify-content:center;gap:12px;margin:24px 0"><button class="secondary" id="prevPage" disabled>صفحه قبل</button><span id="pageInfo" style="color:var(--muted);align-self:center;font-size:12px">صفحه ۱</span><button class="primary" id="nextPage">انیمه‌های بیشتر ←</button></div><p id="apiNote" style="color:var(--muted);font-size:11px;text-align:center;line-height:1.9">برای هر انیمه خودت از دستگاهت پوستر انتخاب کن؛ پوسترها از سایت دیگری دریافت نمی‌شوند.</p></section>
+<div id="adminAnimeTools" style="display:none;margin:0 0 18px"><button class="primary" id="addAnimeBtn" type="button">＋ افزودن انیمه جدید</button></div><div class="grid" id="animeGrid"><div class="empty" style="display:block">هنوز انیمه‌ای اضافه نشده؛ مدیر سایت می‌تواند انیمه‌ها را دستی اضافه کند.</div></div><div style="display:flex;justify-content:center;gap:12px;margin:24px 0"><button class="secondary" id="prevPage" disabled>صفحه قبل</button><span id="pageInfo" style="color:var(--muted);align-self:center;font-size:12px">صفحه ۱</span><button class="primary" id="nextPage">انیمه‌های بیشتر ←</button></div><p id="apiNote" style="color:var(--muted);font-size:11px;text-align:center;line-height:1.9">برای هر انیمه خودت از دستگاهت پوستر انتخاب کن؛ پوسترها از سایت دیگری دریافت نمی‌شوند.</p></section>
 <section id="popular" class="banner"><div><h3>انیمه‌های محبوبت رو ذخیره کن ✨</h3><p>روی قلب هر کارت بزن تا به فهرست علاقه‌مندی‌هات اضافه بشه.<br>رنگ صفحه هم با سلیقه‌ی خودت قابل تغییره.</p></div><button class="primary" id="favoritesBtn">♡ فقط علاقه‌مندی‌ها</button></section>
 </main>
 
@@ -61,12 +61,14 @@ footer{border-top:1px solid var(--line);padding:27px 0 35px;color:var(--muted);f
 <div class="profile-overlay" id="profileOverlay" role="dialog" aria-modal="true" aria-labelledby="profileName"><div class="profile-panel"><button class="detail-close" id="profileClose" type="button" aria-label="بستن">×</button><div class="profile-head"><div class="profile-avatar" id="profileAvatar">✦</div><div><h2 class="profile-name" id="profileName">پروفایل کاربر</h2><div class="profile-sub" id="profileEmail"></div><div class="profile-sub" id="profileJoined"></div></div></div><section class="detail-section"><h3>ویرایش نام نمایشی</h3><div class="profile-edit"><input id="profileNameInput" maxlength="40" placeholder="نامی که بقیه می‌بینند"><button class="detail-btn" id="profileSaveName" type="button">ذخیره نام</button></div><p class="profile-status" id="profileStatus"></p></section><section class="detail-section"><h3>⭐ انیمه‌های مورد علاقه</h3><p class="profile-status">انیمه‌هایی که با قلب ذخیره می‌کنی اینجا نمایش داده می‌شوند.</p><div class="profile-favorites" id="profileFavorites"></div></section></div></div>
 <div class="auth-overlay" id="authOverlay" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="auth-panel"><button class="detail-close" id="authClose" type="button" aria-label="بستن">×</button><h2 id="authTitle">حساب Light Anime</h2><p class="auth-muted">برای ذخیره و استفاده از حساب در دستگاه‌های مختلف ثبت‌نام کن یا وارد شو.</p><form id="authForm"><input class="auth-field" id="authName" type="text" maxlength="40" placeholder="نام نمایشی (برای ثبت‌نام)" autocomplete="nickname"><input class="auth-field" id="authEmail" type="email" placeholder="ایمیل" autocomplete="email" required><input class="auth-field" id="authPassword" type="password" minlength="6" placeholder="رمز عبور (حداقل ۶ کاراکتر)" autocomplete="current-password" required><div class="auth-actions"><button class="primary" type="submit" id="authSubmit">ثبت‌نام</button><button class="secondary" type="button" id="authSignIn">ورود</button></div></form><div class="auth-actions"><button class="secondary" type="button" id="authSignOut" style="display:none">خروج از حساب</button></div><p class="auth-status" id="authStatus" role="status">برای فعال‌کردن اتصال، کلید Publishable خودت را در تنظیمات کد وارد کن.</p></div></div>
 <footer><div class="wrap foot"><span>© 2026 LIGHT ANIME — ساخته‌شده برای عاشقان انیمه</span><span>آرشیو انیمه‌ها در خود سایت · پوسترها · رنگ‌بندی قابل تنظیم</span></div></footer>
+<div class="detail-overlay" id="addAnimeOverlay" role="dialog" aria-modal="true" aria-labelledby="addAnimeTitle"><div class="detail-panel" style="max-width:620px"><button class="detail-close" id="addAnimeClose" type="button" aria-label="بستن">×</button><h2 id="addAnimeTitle">افزودن انیمه جدید</h2><p class="chat-note">بعد از ذخیره، انیمه برای همه بازدیدکننده‌ها نمایش داده می‌شود.</p><form id="addAnimeForm" style="display:grid;gap:10px"><input class="auth-field" id="newAnimeTitle" required maxlength="180" placeholder="نام انیمه *"><input class="auth-field" id="newAnimeYear" type="number" min="1900" max="2100" placeholder="سال انتشار"><input class="auth-field" id="newAnimeScore" type="number" min="0" max="10" step="0.1" placeholder="امتیاز (۰ تا ۱۰)"><input class="auth-field" id="newAnimeGenres" maxlength="180" placeholder="ژانرها، با ویرگول جدا کن"><textarea class="auth-field" id="newAnimeSummary" rows="4" maxlength="5000" placeholder="توضیحات انیمه"></textarea><input class="auth-field" id="newAnimePosterUrl" type="url" placeholder="لینک مستقیم پوستر (اختیاری)"><input class="auth-field" id="newAnimeDownload" type="url" placeholder="لینک دانلود (اختیاری)"><button class="primary" id="saveNewAnime" type="submit">ذخیره و انتشار برای همه</button><p id="addAnimeStatus" class="auth-status" role="status"></p></form></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 // Supabase connection settings. The publishable key is safe for browser use when RLS is enabled.
 const SUPABASE_URL = "https://uutkabeetqduvpozjvmh.supabase.co";
 const ADMIN_EMAIL = "aliteraks21@gmail.com";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_SyXv5dZNVsCzYsEfIdFZwQ_SYo9uHOr";
+let editingManualId = null;
 let supabaseClient = null;
 if (window.supabase && SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_")) {
   supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
@@ -87,7 +89,7 @@ async function syncUserData(user){
  catch(e){console.warn("Favorites sync failed",e)}
 }
 function updateAuthUI(user){
-  currentUser=user||null; if(user) syncUserData(user);
+  currentUser=user||null; updateAdminTools(); if(user) syncUserData(user);
   if(user){authOpenBtn.textContent=(user.user_metadata?.display_name||user.email||"حساب من");authSignOutBtn.style.display="block";authMessage("وارد شدی؛ روی نامت بزن تا پروفایلت باز شود.","ok");}
   else {authOpenBtn.textContent="ورود / ثبت‌نام";authSignOutBtn.style.display="none";closeProfile();}
 }
@@ -130,6 +132,7 @@ document.getElementById("authForm").addEventListener("submit",async e=>{
   else authMessage("درخواست ثبت‌نام ثبت شد. ایمیلت را برای تأیید حساب بررسی کن.","ok");
 });
 authSignOutBtn.addEventListener("click",async()=>{if(!supabaseClient)return;const {error}=await supabaseClient.auth.signOut();if(error){authMessage(error.message,"error");return}updateAuthUI(null);authMessage("از حساب خارج شدی.","ok")});
+updateAdminTools();
 if(supabaseClient){supabaseClient.auth.getSession().then(({data})=>updateAuthUI(data.session?.user||null));supabaseClient.auth.onAuthStateChange((_event,session)=>updateAuthUI(session?.user||null));}
 const grid=document.getElementById("animeGrid");
 const apiNote=document.getElementById("apiNote");
@@ -138,8 +141,8 @@ let currentPage=1, filter="همه", onlyFav=false, loading=false, totalPages=1, 
 let favorites=new Set();
 let allAnimeCache=[];
 try{favorites=new Set(JSON.parse(localStorage.getItem("lightAnimeFavorites")||"[]"))}catch(e){}
-// پوسترهای پیش‌فرض را مثل لینک دانلود از همین HTML تنظیم کن؛ کلید، شناسهٔ MAL انیمه است.
-// نمونه: const POSTER_LINKS = {"6":"https://example.com/trigun-poster.jpg"};
+// برای تعیین پوستر پیش‌فرض، شناسهٔ انیمه را با آدرس مستقیم عکس وارد کن.
+// نمونه: const POSTER_LINKS = {"1535":"https://example.com/death-note.jpg"};
 const POSTER_LINKS = {};
 const posterCache = new Map(Object.entries(POSTER_LINKS));
 let posterDB = null;
@@ -192,6 +195,7 @@ function persianGenre(g){const map={"Action":"اکشن","Adventure":"ماجرا�
 function imageFor(a){return a.coverImage?.extraLarge||a.coverImage?.large||a.images?.jpg?.large_image_url||a.images?.jpg?.image_url||a.images?.webp?.image_url||""}
 function animeId(a){return a.mal_id||a.id}
 function normalizeAniList(a){return {id:a.id,mal_id:a.id,title_english:a.title?.english||a.title?.romaji||a.title?.native||"بدون عنوان",title:a.title?.romaji||a.title?.native||"",title_japanese:a.title?.native||"",synopsis:a.description||"",images:{},coverImage:a.coverImage,score:a.averageScore?Math.round(a.averageScore)/10:null,episodes:a.episodes,year:a.startDate?.year,type:({TV:"TV",MOVIE:"Movie",OVA:"OVA",ONA:"ONA",SPECIAL:"Special",MUSIC:"Music"})[a.format]||a.format,genres:(a.genres||[]).map(name=>({name})),members:a.popularity,url:a.siteUrl}}
+function rowTitle(a){return a.title_english||a.title||"این انیمه"}
 function render(items){
  allAnimeCache=items;
  currentItems=items; grid.innerHTML="";
@@ -202,12 +206,12 @@ function render(items){
  const fav=favorites.has(animeId(a));
  const img=posterCache.get(String(animeId(a)))||imageFor(a)||"";
  const el=document.createElement("article");el.className="card";
- el.innerHTML=`<div class="poster ${img?"has-image":""}">${img?`<img loading="lazy" src="${escapeHTML(img)}" alt="پوستر ${escapeHTML(title)}">`:`<div class="poster-placeholder"><span class="mask">🎌</span><span style="font-size:11px">پوستر هنوز انتخاب نشده</span></div>`}<input class="poster-file" type="file" accept="image/*" aria-label="انتخاب پوستر برای ${escapeHTML(title)}"><button class="poster-upload" type="button">${img?"✎ تغییر پوستر":"＋ انتخاب پوستر از دستگاه"}</button><span class="rank">★ ${a.score||"—"}</span><button class="fav ${fav?"on":""}" aria-label="علاقه‌مندی" title="علاقه‌مندی">♥</button></div><div class="card-body"><h3 class="card-title">${escapeHTML(title)}</h3><div class="meta"><span>${a.year||"نامشخص"}</span><span>${a.episodes?a.episodes+" قسمت":persianType(a.type)}</span></div><div class="tags">${[persianType(a.type),...genres.slice(0,2)].map(g=>`<span class="tag">${escapeHTML(g)}</span>`).join("")}</div><div class="card-bottom"><button class="watch detail-open" type="button" style="border:0;background:transparent;cursor:pointer;font-family:inherit">دانلود انیمه ↓</button></div></div>`;
+ el.innerHTML=`<div class="poster ${img?"has-image":""}">${img?`<img loading="lazy" src="${escapeHTML(img)}" alt="پوستر ${escapeHTML(title)}">`:`<div class="poster-placeholder"><span class="mask">🎌</span><span style="font-size:11px">پوستر هنوز انتخاب نشده</span></div>`}<input class="poster-file" type="file" accept="image/*" aria-label="انتخاب پوستر برای ${escapeHTML(title)}"><button class="poster-upload" type="button">${img?"✎ تغییر پوستر":"＋ انتخاب پوستر از دستگاه"}</button><span class="rank">★ ${a.score||"—"}</span><button class="fav ${fav?"on":""}" aria-label="علاقه‌مندی" title="علاقه‌مندی">♥</button></div><div class="card-body"><h3 class="card-title">${escapeHTML(title)}</h3><div class="meta"><span>${a.year||"نامشخص"}</span><span>${a.episodes?a.episodes+" قسمت":persianType(a.type)}</span></div><div class="tags">${[persianType(a.type),...genres.slice(0,2)].map(g=>`<span class="tag">${escapeHTML(g)}</span>`).join("")}</div><div class="card-bottom"><button class="watch detail-open" type="button" style="border:0;background:transparent;cursor:pointer;font-family:inherit">دانلود انیمه ↓</button></div>${a.manual&&isAdmin()?`<div style="display:flex;gap:8px;padding:0 14px 14px"><button type="button" class="manual-edit" style="flex:1">ویرایش</button><button type="button" class="manual-delete" style="flex:1;color:#ff8c9b">حذف</button></div>`:""}</div>`;
+ if(a.manual&&isAdmin()){el.querySelector(".manual-edit").addEventListener("click",()=>{const row=manualAnimeRows.find(x=>String(x.manual_id)===String(a.manual_id));if(!row)return;editingManualId=row.manual_id;document.getElementById("addAnimeTitle").textContent="ویرایش انیمه";document.getElementById("saveNewAnime").textContent="ذخیره تغییرات";document.getElementById("newAnimeTitle").value=row.title||"";document.getElementById("newAnimeYear").value=row.year||"";document.getElementById("newAnimeScore").value=row.score??"";document.getElementById("newAnimeGenres").value=row.genres.map(g=>g.name).join(", ");document.getElementById("newAnimeSummary").value=row.synopsis||"";document.getElementById("newAnimePosterUrl").value=row.images?.jpg?.large_image_url||"";document.getElementById("newAnimeDownload").value=row.download_url||"";document.getElementById("addAnimeStatus").textContent="";document.getElementById("addAnimeOverlay").classList.add("open");document.body.style.overflow="hidden"});el.querySelector(".manual-delete").addEventListener("click",async()=>{if(!confirm(`انیمه «${rowTitle(a)}» برای همه حذف شود؟`))return;const {error}=await supabaseClient.from("manual_anime").delete().eq("id",a.manual_id);if(error)return alert("حذف انجام نشد: "+error.message);await load()})}
  el.querySelector(".detail-open").addEventListener("click",()=>openAnimeDetails(a));
  el.querySelector(".fav").addEventListener("click",async()=>{const id=String(animeId(a)),wasFav=favorites.has(animeId(a));wasFav?favorites.delete(animeId(a)):favorites.add(animeId(a));try{localStorage.setItem("lightAnimeFavorites",JSON.stringify([...favorites]))}catch(e){};el.querySelector(".fav").classList.toggle("on",favorites.has(animeId(a)));if(supabaseClient&&currentUser){if(wasFav){await supabaseClient.from("user_favorites").delete().eq("user_id",currentUser.id).eq("anime_id",id)}else{const {error}=await supabaseClient.from("user_favorites").upsert({user_id:currentUser.id,anime_id:id,anime_title:a.title_english||a.title||"Anime"},{onConflict:"user_id,anime_id"});if(error)alert("علاقه‌مندی روی سرور ذخیره نشد؛ SQL راهنما را اجرا کن.")}}});
  const posterBox=el.querySelector(".poster"), fileInput=el.querySelector(".poster-file");
  el.querySelector(".poster-upload").addEventListener("click",()=>{
-  if(!currentUser){alert("برای اینکه پوستر انتخابی برای همه ذخیره شود، اول وارد حساب شو.");return;}
   fileInput.click();
  });
  fileInput.addEventListener("change",async()=>{
@@ -215,7 +219,7 @@ function render(items){
   if(!file.type.startsWith("image/")){alert("لطفاً یک فایل تصویری انتخاب کن.");return}
   if(file.size>8*1024*1024){alert("حجم پوستر باید کمتر از ۸ مگابایت باشد.");fileInput.value="";return}
   const reader=new FileReader();
-  reader.onload=async()=>{try{await savePoster(animeId(a),reader.result);render(currentItems)}catch(e){alert("ذخیرهٔ پوستر انجام نشد. وارد حساب شو و SQL راهنما را اجرا کن. "+(e.message||""))}};
+  reader.onload=async()=>{try{await savePoster(animeId(a),reader.result);render(currentItems);apiNote.textContent=currentUser?"پوستر ذخیره شد.":"پوستر در همین مرورگر ذخیره شد؛ برای نمایش آن روی دستگاه‌های دیگر باید لینک پوستر را در POSTER_LINKS تنظیم کنی."}catch(e){alert("ذخیرهٔ پوستر انجام نشد: "+(e.message||"خطای نامشخص"))}};
   reader.readAsDataURL(file);
  });
  grid.appendChild(el);
@@ -382,47 +386,61 @@ function filterDataset(items,q){
  }
  return out;
 }
-const offlineStarter=[
- {id:1,title:"Cowboy Bebop",title_english:"Cowboy Bebop",year:1998,episodes:26,type:"TV",score:8.75,genres:[{name:"Action"},{name:"Sci-Fi"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/4/19644l.jpg"}},url:"https://myanimelist.net/anime/1"},
- {id:5114,title:"Fullmetal Alchemist: Brotherhood",title_english:"Fullmetal Alchemist: Brotherhood",year:2009,episodes:64,type:"TV",score:9.1,genres:[{name:"Action"},{name:"Adventure"},{name:"Fantasy"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/1208/94745l.jpg"}},url:"https://myanimelist.net/anime/5114"},
- {id:9253,title:"Steins;Gate",title_english:"Steins;Gate",year:2011,episodes:24,type:"TV",score:9.07,genres:[{name:"Drama"},{name:"Sci-Fi"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/5/73199l.jpg"}},url:"https://myanimelist.net/anime/9253"},
- {id:16498,title:"Attack on Titan",title_english:"Attack on Titan",year:2013,episodes:25,type:"TV",score:8.5,genres:[{name:"Action"},{name:"Drama"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/10/47347l.jpg"}},url:"https://myanimelist.net/anime/16498"},
- {id:1535,title:"Death Note",title_english:"Death Note",year:2006,episodes:37,type:"TV",score:8.62,genres:[{name:"Mystery"},{name:"Drama"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/9/9453l.jpg"}},url:"https://myanimelist.net/anime/1535"},
- {id:11061,title:"Hunter x Hunter (2011)",title_english:"Hunter x Hunter (2011)",year:2011,episodes:148,type:"TV",score:9.03,genres:[{name:"Action"},{name:"Adventure"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/1337/99013l.jpg"}},url:"https://myanimelist.net/anime/11061"},
- {id:40748,title:"Jujutsu Kaisen",title_english:"Jujutsu Kaisen",year:2020,episodes:24,type:"TV",score:8.6,genres:[{name:"Action"},{name:"Fantasy"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/1171/109222l.jpg"}},url:"https://myanimelist.net/anime/40748"},
- {id:38524,title:"Shingeki no Kyojin Season 3 Part 2",title_english:"Attack on Titan Season 3 Part 2",year:2019,episodes:10,type:"TV",score:9.05,genres:[{name:"Action"},{name:"Drama"}],images:{jpg:{large_image_url:"https://cdn.myanimelist.net/images/anime/1517/100633l.jpg"}},url:"https://myanimelist.net/anime/38524"}
-];
-async function load(){
- if(loading)return;loading=true;grid.innerHTML='<div class="empty" style="display:block">در حال بارگذاری آرشیو برای نمایش داخل Light Anime…</div>';
- document.getElementById("nextPage").disabled=true;document.getElementById("prevPage").disabled=currentPage<=1;
- const q=document.getElementById("search").value.trim();
- try{
-  let all=await fetchFullDataset();
-  let items=filterDataset(all,q);if(onlyFav)items=items.filter(a=>favorites.has(animeId(a)));totalPages=Math.max(1,Math.ceil(items.length/24));
-  const pageItems=items.slice((currentPage-1)*24,currentPage*24);
-  render(pageItems);
-  pageInfo.textContent=`صفحه ${currentPage.toLocaleString("fa-IR")} از ${totalPages.toLocaleString("fa-IR")} · ${items.length.toLocaleString("fa-IR")} عنوان`;
-  apiNote.textContent="فهرست انیمه‌ها از آرشیو دریافت می‌شود و انیمه‌های فصل جاری و فصل آینده هم به‌طور خودکار به‌روز می‌شوند. پوسترهای دریافتی را می‌توانی با انتخاب تصویر از دستگاه خودت جایگزین کنی.";
-  document.getElementById("nextPage").disabled=currentPage>=totalPages;document.getElementById("prevPage").disabled=currentPage<=1;
- }catch(datasetError){
-  try{
-   const apiQuery=resolvePersianAlias(q);let result;try{result=await fetchAniList(apiQuery,currentPage)}catch(primaryError){result=await fetchJikan(apiQuery,currentPage)}
-   let items=result.items.filter(a=>!excluded(a));totalPages=result.pages;
-   if(onlyFav)items=items.filter(a=>favorites.has(animeId(a)));
-   render(items);pageInfo.textContent=`صفحه ${currentPage.toLocaleString("fa-IR")} از ${totalPages.toLocaleString("fa-IR")}`;
-   apiNote.textContent="انیمه‌های جدید فصل جاری و آینده به‌صورت خودکار از سرویس اطلاعات انیمه دریافت می‌شوند؛ پوستر هر عنوان هم قابل جایگزینی است.";
-   document.getElementById("nextPage").disabled=currentPage>=totalPages;document.getElementById("prevPage").disabled=currentPage<=1;
-  }catch(apiError){
-   let items=filterDataset(offlineStarter.filter(a=>!excluded(a)),q);
-   totalPages=Math.max(1,Math.ceil(items.length/24));items=items.slice((currentPage-1)*24,currentPage*24);
-   if(onlyFav)items=items.filter(a=>favorites.has(animeId(a)));
-   render(items);pageInfo.textContent=`فهرست ذخیره‌شده · ${items.length.toLocaleString("fa-IR")} عنوان`;
-   apiNote.textContent="اتصال به آرشیو کامل برقرار نشد؛ چند عنوان نمونه نمایش داده شده‌اند. برای به‌روزرسانی خودکار، اتصال اینترنت و دسترسی به سرویس Jikan لازم است.";
-   document.getElementById("nextPage").disabled=true;document.getElementById("prevPage").disabled=currentPage<=1;
-  }
- }
- loading=false;
+const offlineStarter=[];
+const sessionResults=new Map(); // در هر بار باز شدن/ریفرش صفحه خالی می‌شود؛ داخل همان نشست درخواست تکراری نمی‌زنیم.
+let manualAnimeRows=[];
+function isAdmin(){return !!currentUser && (currentUser.email||"").toLowerCase()===ADMIN_EMAIL.toLowerCase()}
+function updateAdminTools(){const tools=document.getElementById("adminAnimeTools");if(tools)tools.style.display=isAdmin()?"block":"none"}
+async function fetchManualAnime(){
+ if(!supabaseClient)return [];
+ const {data,error}=await supabaseClient.from("manual_anime").select("id,title,year,score,genres,summary,poster_url,download_url,created_at").order("created_at",{ascending:false});
+ if(error){console.warn("Manual anime load failed",error);return []}
+ manualAnimeRows=(data||[]).map(x=>({id:"manual-"+x.id,manual_id:x.id,title:x.title,title_english:x.title,title_japanese:"",year:x.year,episodes:null,type:"Manual",score:x.score,genres:(x.genres||[]).map(name=>({name})),synopsis:x.summary||"",images:{jpg:{large_image_url:x.poster_url||""}},coverImage:{large:x.poster_url||""},url:x.download_url||"",download_url:x.download_url||"",manual:true}));
+ return manualAnimeRows;
 }
+document.getElementById("addAnimeBtn")?.addEventListener("click",()=>{editingManualId=null;document.getElementById("addAnimeForm").reset();document.getElementById("addAnimeTitle").textContent="افزودن انیمه جدید";document.getElementById("saveNewAnime").textContent="ذخیره و انتشار برای همه";document.getElementById("addAnimeOverlay").classList.add("open");document.body.style.overflow="hidden";document.getElementById("addAnimeStatus").textContent=""});
+document.getElementById("addAnimeClose")?.addEventListener("click",()=>{document.getElementById("addAnimeOverlay").classList.remove("open");document.body.style.overflow=""});
+document.getElementById("addAnimeOverlay")?.addEventListener("click",e=>{if(e.target.id==="addAnimeOverlay"){e.currentTarget.classList.remove("open");document.body.style.overflow=""}});
+document.getElementById("addAnimeForm")?.addEventListener("submit",async e=>{
+ e.preventDefault();const status=document.getElementById("addAnimeStatus"),btn=document.getElementById("saveNewAnime");
+ if(!isAdmin()){status.textContent="فقط مدیر سایت اجازه افزودن انیمه دارد.";return}
+ if(!supabaseClient){status.textContent="اتصال دیتابیس برقرار نیست.";return}
+ btn.disabled=true;status.textContent="در حال ذخیره…";
+ try{
+  const title=document.getElementById("newAnimeTitle").value.trim();const poster=document.getElementById("newAnimePosterUrl").value.trim();
+  const genres=document.getElementById("newAnimeGenres").value.split(/[،,]/).map(x=>x.trim()).filter(Boolean);
+  const row={title,year:parseInt(document.getElementById("newAnimeYear").value,10)||null,score:document.getElementById("newAnimeScore").value===""?null:Math.max(0,Math.min(10,Number(document.getElementById("newAnimeScore").value))),genres,summary:document.getElementById("newAnimeSummary").value.trim(),poster_url:poster||null,download_url:document.getElementById("newAnimeDownload").value.trim()||null};
+  const result=editingManualId?await supabaseClient.from("manual_anime").update(row).eq("id",editingManualId):await supabaseClient.from("manual_anime").insert({...row,created_by:currentUser.id});if(result.error)throw result.error;
+  const wasEditing=editingManualId!==null;editingManualId=null;document.getElementById("addAnimeForm").reset();document.getElementById("addAnimeTitle").textContent="افزودن انیمه جدید";btn.textContent="ذخیره و انتشار برای همه";status.textContent=wasEditing?"تغییرات ذخیره شد!":"انیمه منتشر شد!";await load();
+ }catch(err){status.textContent="ذخیره نشد: "+(err.message||"خطای نامشخص")+" — تنظیمات SQL دیتابیس را بررسی کن."}finally{btn.disabled=false}
+});
+
+async function load(){
+ if(loading)return;loading=true;
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ try{
+  let items=await fetchManualAnime();
+  items=items.filter(a=>!excluded(a));
+  if(q)items=items.filter(a=>((a.title_english||"")+" "+(a.title||"")+" "+(a.synopsis||"")+" "+(a.genres||[]).map(g=>g.name).join(" ")).toLowerCase().includes(q));
+  if(filter!=="همه"){
+   const en=({"اکشن":"Action","ماجراجویی":"Adventure","درام":"Drama","فانتزی":"Fantasy","علمی‌تخیلی":"Sci-Fi","عاشقانه":"Romance"})[filter]||filter;
+   items=items.filter(a=>(a.genres||[]).some(g=>g.name.toLowerCase()===en.toLowerCase()||persianGenre(g.name)===filter));
+  }
+  if(onlyFav)items=items.filter(a=>favorites.has(animeId(a)));
+  totalPages=Math.max(1,Math.ceil(items.length/5));
+  const pageItems=items.slice((currentPage-1)*5,currentPage*5);
+  render(pageItems);
+  pageInfo.textContent=`صفحه ${currentPage.toLocaleString("fa-IR")} از ${totalPages.toLocaleString("fa-IR")}`;
+  apiNote.textContent=items.length?"فهرست فقط شامل انیمه‌هایی است که مدیر سایت دستی اضافه کرده است.":"هنوز انیمه‌ای اضافه نشده؛ مدیر سایت وارد حساب شود و روی «افزودن انیمه جدید» بزند.";
+  document.getElementById("nextPage").disabled=currentPage>=totalPages;
+  document.getElementById("prevPage").disabled=currentPage<=1;
+ }catch(err){
+  render([]);totalPages=1;pageInfo.textContent="صفحه ۱ از ۱";
+  apiNote.textContent="دریافت فهرست ممکن نشد؛ اتصال دیتابیس و تنظیمات SQL را بررسی کن.";
+  document.getElementById("nextPage").disabled=true;document.getElementById("prevPage").disabled=true;
+ }finally{loading=false;updateAdminTools()}
+}
+
 document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter=b.dataset.filter;currentPage=1;load()}));
 let searchTimer;
 document.getElementById("search").addEventListener("input",()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>{currentPage=1;load()},450)});
@@ -489,4 +507,32 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&detailOverlay.class
 load();
 getSavedPosters();
 </script>
+
+<div id="noticeOverlay" style="display:none;position:fixed;inset:0;z-index:3000;background:#050610d9;backdrop-filter:blur(7px);align-items:center;justify-content:center;padding:20px">
+ <div style="width:min(440px,100%);background:var(--panel,#14182a);color:var(--text,#f4f5ff);border:1px solid var(--line,#ffffff14);border-radius:22px;padding:28px;text-align:center;box-shadow:0 24px 80px #0009">
+  <div style="font-size:36px;margin-bottom:10px">🔔</div><h2 style="margin:0 0 12px;font-size:22px">اطلاعیه جدید</h2>
+  <p id="noticeMessage" style="line-height:2;margin:0 0 22px">انیمه test قسمت جدید اضافه شد</p>
+  <button id="noticeClose" type="button" style="border:0;border-radius:11px;padding:11px 24px;background:var(--accent,#9b7bff);color:#111;font-weight:bold;cursor:pointer">متوجه شدم</button>
+ </div>
+</div>
+<script>
+// برای انتشار اطلاعیه بعدی، متن NOTICE_MESSAGE و شناسه NOTICE_ID را تغییر بده.
+// شناسه باید برای هر اطلاعیه جدید متفاوت باشد تا هر مرورگر یک بار پیام جدید را ببیند.
+(function(){
+ const NOTICE_ID = 'notice-2026-10-09-01';
+ const NOTICE_MESSAGE = 'انیمه test قسمت جدید اضافه شد';
+ const key = 'lightAnimeSeenNotice_' + NOTICE_ID;
+ const overlay = document.getElementById('noticeOverlay');
+ if (!overlay) return;
+ document.getElementById('noticeMessage').textContent = NOTICE_MESSAGE;
+ let seen = false;
+ try { seen = localStorage.getItem(key) === '1'; } catch(e) {}
+ if (!seen) overlay.style.display = 'flex';
+ document.getElementById('noticeClose').addEventListener('click', function(){
+   try { localStorage.setItem(key, '1'); } catch(e) {}
+   overlay.style.display = 'none';
+ });
+})();
+</script>
+
 </body></html>
